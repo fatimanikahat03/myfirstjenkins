@@ -36,7 +36,7 @@ public class MyStepdefs {
 //edgeOptions.addArguments("--remote-debugging-port=9222");
 //edgeOptions.addArguments("--headless");
       //  edgeOptions.addArguments("--no-sandbox");
-        driver=new EdgeDriver();
+        driver=new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         driver.manage().window().maximize();
