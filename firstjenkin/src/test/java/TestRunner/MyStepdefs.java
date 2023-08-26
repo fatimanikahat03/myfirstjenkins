@@ -25,19 +25,19 @@ public class MyStepdefs {
     @Given("Enter URL in chrome Browser")
     public void enterURLInChromeBrowser()  {
 //        driver = BrowserCall.Browserinvocation(); //facebook.com  // implicit timeout enable for execution or sleep method
-//EdgeOptions edgeOptions=new EdgeOptions();
+EdgeOptions edgeOptions=new EdgeOptions();
   //      edgeOptions.addArguments("--no-sandbox");
     //    edgeOptions.addArguments("--disable-dev-shm-usage");
 
        // System.setProperty("webdriver.edge.verboseLogging", "true");
       //  edgeOptions.setBinary("C:\\Users\\Lenovo\\Desktop\\edgedriver_win64 (2)\\msedgedriver.exe");
         //C:\Users\Lenovo\Desktop\edgedriver_win64 (2)
-//edgeOptions.addArguments("--remote-debugging-port=9222");
+edgeOptions.addArguments("--remote-debugging-port=9222");
 //edgeOptions.addArguments("--headless");
       //  edgeOptions.addArguments("--no-sandbox");
 
 //Thread.sleep(2000);
-       driver=new EdgeDriver();
+       driver=new EdgeDriver(edgeOptions);
         driver.manage().window().maximize();
        // driver=new ChromeDriver();https://github.com/fatimanikahat03/jenkins2.git
 driver.get("https://www.facebook.com");
