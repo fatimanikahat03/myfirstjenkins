@@ -8,14 +8,14 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 
 import java.io.IOException;
-import java.sql.DriverManager;
+
 
 import reusable.BrowserCall;
 
@@ -23,7 +23,7 @@ public class MyStepdefs {
     WebDriver driver;
 
     @Given("Enter URL in chrome Browser")
-    public void enterURLInChromeBrowser() throws IOException, InterruptedException {
+    public void enterURLInChromeBrowser()  {
 //        driver = BrowserCall.Browserinvocation(); //facebook.com  // implicit timeout enable for execution or sleep method
 //EdgeOptions edgeOptions=new EdgeOptions();
   //      edgeOptions.addArguments("--no-sandbox");
@@ -36,7 +36,7 @@ public class MyStepdefs {
 //edgeOptions.addArguments("--headless");
       //  edgeOptions.addArguments("--no-sandbox");
 
-Thread.sleep(2000);
+//Thread.sleep(2000);
        driver=new EdgeDriver();
         driver.manage().window().maximize();
        // driver=new ChromeDriver();https://github.com/fatimanikahat03/jenkins2.git
