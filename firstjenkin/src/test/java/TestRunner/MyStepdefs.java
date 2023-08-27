@@ -26,7 +26,8 @@ public class MyStepdefs {
     @Given("Enter URL in chrome Browser")
     public void enterURLInChromeBrowser() throws IOException, InterruptedException {
 
-       System.setProperty("webdriver.edge.driver", "C:\Users\Lenovo\Desktop\edgedriver_win64 (2)");
+        System.setProperty("webdriver.edge.driver", "C:\\Users\\Lenovo\\Desktop\\edgedriver_win64 (2)");
+
       //        driver = BrowserCall.Browserinvocation(); //facebook.com  // implicit timeout enable for execution or sleep method
 EdgeOptions edgeOptions=new EdgeOptions();
   //      edgeOptions.addArguments("--no-sandbox");
