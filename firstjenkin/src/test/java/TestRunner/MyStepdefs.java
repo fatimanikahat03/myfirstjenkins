@@ -26,7 +26,7 @@ public class MyStepdefs {
     @Given("Enter URL in chrome Browser")
     public void enterURLInChromeBrowser() throws IOException, InterruptedException {
 //        driver = BrowserCall.Browserinvocation(); //facebook.com  // implicit timeout enable for execution or sleep method
-//EdgeOptions edgeOptions=new EdgeOptions();
+EdgeOptions edgeOptions=new EdgeOptions();
   //      edgeOptions.addArguments("--no-sandbox");
     //    edgeOptions.addArguments("--disable-dev-shm-usage");
 
@@ -35,6 +35,8 @@ public class MyStepdefs {
         //C:\Users\Lenovo\Desktop\edgedriver_win64 (2)
 //edgeOptions.addArguments("--remote-debugging-port=9222");
 //edgeOptions.addArguments("--headless");
+                  edgeOptions.AddArgument("headless");
+
       //  edgeOptions.addArguments("--no-sandbox");
         driver=new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
