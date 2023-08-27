@@ -38,7 +38,9 @@ EdgeOptions edgeOptions=new EdgeOptions();
         //C:\Users\Lenovo\Desktop\edgedriver_win64 (2)
 //edgeOptions.addArguments("--remote-debugging-port=9222");
 //edgeOptions.addArguments("--headless");
-                  edgeOptions.addArguments("headless");
+                  edgeOptions.addArguments("--headless");
+              RemoteWebDriver.builder().oneOf(edgeOptions).build();
+
 
       //  edgeOptions.addArguments("--no-sandbox");
         driver=new EdgeDriver();
